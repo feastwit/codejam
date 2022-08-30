@@ -840,9 +840,9 @@ azat.addEventListener('click', function(){
 
     
   second.addEventListener('click', function(){
-    blueAzat = getRandomIndex(cardsDataBlue.slice(0,2))
-    greenAzat = getRandomIndex(cardsDataGreen.slice(0,5))
-    brownAzat = getRandomIndex(cardsDataBrown.slice(0,9))
+    blueAzat = getRandomIndex((getRandomIndex(cardsDataBlue)).slice(0,2))
+    greenAzat = getRandomIndex((getRandomIndex(cardsDataGreen)).slice(0,5))
+    brownAzat = getRandomIndex((getRandomIndex(cardsDataBrown)).slice(0,9))
 
     allsecond = getDecks(blueAzat,brownAzat, greenAzat)
 
@@ -939,9 +939,9 @@ cthu.addEventListener('click', function(){
 
     
   second.addEventListener('click', function(){
-    blueAzat = getRandomIndex(cardsDataBlue.slice(0,2))
-    greenchtu = getRandomIndex(cardsDataGreen.slice(0,4))
-    brownAzat = getRandomIndex(cardsDataBrown.slice(0,9))
+    blueAzat = getRandomIndex((getRandomIndex(cardsDataBlue)).slice(0,2))
+    greenchtu = getRandomIndex((getRandomIndex(cardsDataGreen)).slice(0,4))
+    brownAzat = getRandomIndex((getRandomIndex(cardsDataBrown)).slice(0,9))
 
     sec2 = getDecksSecond(blueAzat,brownAzat,greenchtu)
     index = 0;
@@ -1036,9 +1036,9 @@ iog.addEventListener('click', function(){
 
     
   second.addEventListener('click', function(){
-    blueAzat = getRandomIndex(cardsDataBlue.slice(0,2))
-    greenAzat = getRandomIndex(cardsDataGreen.slice(0,5))
-    brownAzat = getRandomIndex(cardsDataBrown.slice(0,9))
+    blueAzat = getRandomIndex((getRandomIndex(cardsDataBlue)).slice(0,2))
+    greenAzat = getRandomIndex((getRandomIndex(cardsDataGreen)).slice(0,5))
+    brownAzat = getRandomIndex((getRandomIndex(cardsDataBrown)).slice(0,9))
 
     third2 = getDecksThird(blueAzat,brownAzat, greenAzat)
     index = 0;
@@ -1133,10 +1133,10 @@ shub.addEventListener('click', function(){
 
     
   second.addEventListener('click', function(){
-    blueAzat = getRandomIndex(cardsDataBlue.slice(0,2))
-    shubBrown2 = getRandomIndex(cardsDataBrown.slice(0,8))
-    shubGreen2 = getRandomIndex(cardsDataGreen.slice(0,6))
 
+    blueAzat = getRandomIndex((getRandomIndex(cardsDataBlue)).slice(0,2))
+    shubGreen2 = getRandomIndex((getRandomIndex(cardsDataGreen)).slice(0,6))
+    shubBrown2 = getRandomIndex((getRandomIndex(cardsDataBrown)).slice(0,8))    
     fourth2 = getDecksFourth(blueAzat, shubBrown2, shubGreen2)
     index = 0;
     getTreck(3)

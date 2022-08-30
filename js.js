@@ -534,68 +534,68 @@ function getTreck(number){
 } 
 
 //super light higher
-const blue0 = getArrColor(cardsDataBlue, 'easy', 2)
-const blueRandom = getRandomIndex(blue0)
-const green0 = getArrColor(cardsDataGreen, 'easy', 5)
-const greenRandom = getRandomIndex(green0)
-const brown = [];
+let blue0 = getArrColor(cardsDataBlue, 'easy', 2)
+let blueRandom = getRandomIndex(blue0)
+let green0 = getArrColor(cardsDataGreen, 'easy', 5)
+let greenRandom = getRandomIndex(green0)
+let brown = [];
 brown.push(getArrColor(cardsDataBrown, 'easy', 5),getArrColor(cardsDataBrown, 'normal', 4))
 let brownRandom = getRandomIndex(brown.flat())
 
 //chtu green
-const secondgreen0 = getArrColor(cardsDataGreen, 'easy', 4)
-const secondgreen = getRandomIndex(secondgreen0) 
+let secondgreen0 = getArrColor(cardsDataGreen, 'easy', 4)
+let secondgreen = getRandomIndex(secondgreen0) 
 
 //shub 0
-const shubGreen000= getArrColor(cardsDataGreen, 'normal', 1)
-const shubGreen00 = []
+let shubGreen000= getArrColor(cardsDataGreen, 'normal', 1)
+let shubGreen00 = []
 shubGreen00.push(green0, shubGreen000)
-const shubGreen0 = getRandomIndex(shubGreen00.flat())
-const shubBrown00 = []
+let shubGreen0 = getRandomIndex(shubGreen00.flat())
+let shubBrown00 = []
 shubBrown00.push(getArrColor(cardsDataBrown, 'easy', 5),getArrColor(cardsDataBrown, 'normal', 3))
-const shubBrown0 = getRandomIndex(shubBrown00.flat())
+let shubBrown0 = getRandomIndex(shubBrown00.flat())
 
 
 //light higher
- const blue = getArrColor(cardsDataBlue, 'easy')
- const blue1 = getArrColor(cardsDataBlue, 'normal')
+ let blue = getArrColor(cardsDataBlue, 'easy')
+ let blue1 = getArrColor(cardsDataBlue, 'normal')
  let blueAll = getRandomIndex(blue.concat(blue1)).slice(0,2)
- const green = getArrColor(cardsDataGreen, "easy")
- const green1 = getArrColor(cardsDataGreen, "normal")
+ let green = getArrColor(cardsDataGreen, "easy")
+ let green1 = getArrColor(cardsDataGreen, "normal")
  let greenAll = getRandomIndex(green.concat(green1)).slice(0,5)
- const brown1 = getArrColor(cardsDataBrown, 'easy')
- const brown2 = getArrColor(cardsDataBrown, 'normal')
+ let brown1 = getArrColor(cardsDataBrown, 'easy')
+ let brown2 = getArrColor(cardsDataBrown, 'normal')
  let brownall = brown1.concat(brown2).slice(0,9)
  let brownAll = getRandomIndex(brownall)
 
  //chtu first green
- const lightgreen = getRandomIndex(green.concat(green1)).slice(0,4)
+ let lightgreen = getRandomIndex(green.concat(green1)).slice(0,4)
 
  //shub first
- const shubgreen1 = getRandomIndex(green.concat(green1)).slice(0,6)
- const shubbrown1 = getRandomIndex(brown1.concat(brown2).slice(0,8))
+ let shubgreen1 = getRandomIndex(green.concat(green1)).slice(0,6)
+ let shubbrown1 = getRandomIndex(brown1.concat(brown2).slice(0,8))
 
  //second higher 1
- const blueAzat = getRandomIndex(cardsDataBlue.slice(0,2))
- const greenAzat = getRandomIndex(cardsDataGreen.slice(0,5))
- const brownAzat = getRandomIndex(cardsDataBrown.slice(0,9))
+ let blueAzat = getRandomIndex(cardsDataBlue.slice(0,2))
+ let greenAzat = getRandomIndex(cardsDataGreen.slice(0,5))
+ let brownAzat = getRandomIndex(cardsDataBrown.slice(0,9))
 
  //chtu 2
- const greenchtu = getRandomIndex(cardsDataGreen.slice(0,4))
+ let greenchtu = getRandomIndex(cardsDataGreen.slice(0,4))
 
  //shub 2
-const shubBrown2 = getRandomIndex(cardsDataBrown.slice(0,8))
-const shubGreen2 = getRandomIndex(cardsDataGreen.slice(0,6))
+let shubBrown2 = getRandomIndex(cardsDataBrown.slice(0,8))
+let shubGreen2 = getRandomIndex(cardsDataGreen.slice(0,6))
 
  //third higher
- const blueThird = getArrColor(cardsDataBlue, 'normal')
- const blueThird1 = getArrColor(cardsDataBlue, 'hard')
+ let blueThird = getArrColor(cardsDataBlue, 'normal')
+ let blueThird1 = getArrColor(cardsDataBlue, 'hard')
  let blueThirdall = getRandomIndex(blueThird.concat(blueThird1)).slice(0,2)
- const greenThird = getArrColor(cardsDataGreen, 'normal')
- const greenThird1 = getArrColor(cardsDataGreen, 'hard')
+ let greenThird = getArrColor(cardsDataGreen, 'normal')
+ let greenThird1 = getArrColor(cardsDataGreen, 'hard')
  let greenThirdall = getRandomIndex(greenThird.concat(greenThird1)).slice(0,5)
- const brownThird = getArrColor(cardsDataBrown, 'normal')
- const brownThird1 = getArrColor(cardsDataBrown, 'hard')
+ let brownThird = getArrColor(cardsDataBrown, 'normal')
+ let brownThird1 = getArrColor(cardsDataBrown, 'hard')
  let brownThirdall = getRandomIndex(brownThird.concat(brownThird1)).slice(0,9)
 
  //chtu third green
@@ -606,30 +606,30 @@ const shubGreen2 = getRandomIndex(cardsDataGreen.slice(0,6))
  let shubBrown3 = getRandomIndex(brownThird.concat(brownThird1)).slice(0,8)
  
  //fourth
- const blueFourth0 = getArrColor(cardsDataBlue, 'hard')
- const blueFourth = getRandomIndex(blueFourth0)
- const greenFourth0 = getArrColor(cardsDataGreen, 'hard')
- const greenFourth = getRandomIndex(greenFourth0)
- const brownFourth1 = [];
+ let blueFourth0 = getArrColor(cardsDataBlue, 'hard')
+ let blueFourth = getRandomIndex(blueFourth0)
+ let greenFourth0 = getArrColor(cardsDataGreen, 'hard')
+ let greenFourth = getRandomIndex(greenFourth0)
+ let brownFourth1 = [];
  brownFourth1.push(getArrColor(cardsDataBrown, 'hard', 5),getArrColor(cardsDataBrown, 'normal', 4))
  let brownFourth = getRandomIndex (brownFourth1.flat())
  
  //fouth chtu
-const fourthgreen = getRandomIndex (getArrColor(cardsDataGreen, 'hard', 4))
+ let fourthgreen = getRandomIndex (getArrColor(cardsDataGreen, 'hard', 4))
 
 //shub 4
-const shubgreen400 = getArrColor(cardsDataGreen, 'normal', 1)
-const shubgreen40 = []
+let shubgreen400 = getArrColor(cardsDataGreen, 'normal', 1)
+let shubgreen40 = []
 shubgreen40.push(greenFourth0, shubgreen400)
 let shubgreen4 = getRandomIndex(shubgreen40).flat()
-const shubbrown40 = []
+let shubbrown40 = []
 shubbrown40.push(getArrColor(cardsDataBrown, 'hard', 5),getArrColor(cardsDataBrown, 'normal', 3))
 let shubbrown4 = getRandomIndex(shubbrown40.flat())
 
 function getDecks(blueRandom, brownRandom, greenRandom) {
   const firstStage = []
   firstStage.push(blueRandom[0], brownRandom[0], brownRandom[1], greenRandom[0])
-  
+ 
   const secondStage = []
   secondStage.push(blueRandom[1], brownRandom.slice(2,5), greenRandom.slice(1,3))
   
@@ -638,8 +638,7 @@ function getDecks(blueRandom, brownRandom, greenRandom) {
   
   const allcards = []
   allcards.push(getRandomIndex(firstStage), getRandomIndex(secondStage.flat()), getRandomIndex(thirdStage.flat()))
-  const all = allcards.flat()
-return all
+  return allcards.flat()
 }
 
 function getDecksSecond(blueRandom, brownRandom, greenRandom) {
@@ -687,7 +686,7 @@ function getDecksFourth(blueRandom, brownRandom, greenRandom) {
   const allcards = []
   allcards.push(getRandomIndex(firstStage), getRandomIndex(secondStage.flat()), getRandomIndex(thirdStage.flat()))
   const all = allcards.flat()
-return all
+  return all
 }
 
 
@@ -803,6 +802,13 @@ azat.addEventListener('click', function(){
   removeLightBtn()
       
   pre.addEventListener('click', function(){
+
+    blueRandom = getRandomIndex(blue0)
+    greenRandom = getRandomIndex(green0)
+    brownRandom = getRandomIndex(brown.flat())
+
+    all = getDecks(blueRandom, brownRandom, greenRandom)
+
     getTreck(0)
     index = 0;
     pre.classList.add('active')
@@ -815,6 +821,12 @@ azat.addEventListener('click', function(){
   })
     
   first.addEventListener('click', function(){
+    blueAll = getRandomIndex(blue.concat(blue1)).slice(0,2)
+    greenAll = getRandomIndex(green.concat(green1)).slice(0,5)
+    brownAll = getRandomIndex(brownall)
+
+    allfirst = getDecks(blueAll, brownAll, greenAll)
+
     index = 0;
     getTreck(0)
     first.classList.add('active')
@@ -828,6 +840,12 @@ azat.addEventListener('click', function(){
 
     
   second.addEventListener('click', function(){
+    blueAzat = getRandomIndex(cardsDataBlue.slice(0,2))
+    greenAzat = getRandomIndex(cardsDataGreen.slice(0,5))
+    brownAzat = getRandomIndex(cardsDataBrown.slice(0,9))
+
+    allsecond = getDecks(blueAzat,brownAzat, greenAzat)
+
     index = 0;
     getTreck(0)
     second.classList.add('active')
@@ -841,6 +859,12 @@ azat.addEventListener('click', function(){
 
     
   third.addEventListener('click', function(){
+    blueThirdall = getRandomIndex(blueThird.concat(blueThird1)).slice(0,2)
+    brownThirdall = getRandomIndex(brownThird.concat(brownThird1)).slice(0,9)
+    greenThirdall = getRandomIndex(greenThird.concat(greenThird1)).slice(0,5)
+
+    allthird = getDecks(blueThirdall, brownThirdall, greenThirdall)
+    
     index = 0;
     getTreck(0)
     third.classList.add('active')
@@ -854,6 +878,11 @@ azat.addEventListener('click', function(){
 
   
   fourth.addEventListener('click', function(){
+    blueFourth = getRandomIndex(blueFourth0)
+    brownFourth = getRandomIndex (brownFourth1.flat())
+    greenFourth = getRandomIndex(greenFourth0)
+
+    allfourth = getDecks(blueFourth, brownFourth, greenFourth) 
     index = 0;
     getTreck(0)
     fourth.classList.add('active')
@@ -875,6 +904,11 @@ cthu.addEventListener('click', function(){
   removeLightBtn()
 
   pre.addEventListener('click', function(){
+    blueRandom = getRandomIndex(blue0)
+    greenRandom = getRandomIndex(green0)
+    secondgreen = getRandomIndex(secondgreen0) 
+
+    sec0 = getDecksSecond(blueRandom, brownRandom,secondgreen)
     getTreck(1)
     index = 0;
     pre.classList.add('active')
@@ -887,6 +921,11 @@ cthu.addEventListener('click', function(){
   })
     
   first.addEventListener('click', function(){
+    blueAll = getRandomIndex(blue.concat(blue1)).slice(0,2)
+    lightgreen = getRandomIndex(green.concat(green1)).slice(0,4)
+    brownAll = getRandomIndex(brownall)
+
+    sec1 = getDecksSecond(blueAll, brownAll, lightgreen)
     index = 0;
     getTreck(1)
     first.classList.add('active')
@@ -900,6 +939,11 @@ cthu.addEventListener('click', function(){
 
     
   second.addEventListener('click', function(){
+    blueAzat = getRandomIndex(cardsDataBlue.slice(0,2))
+    greenchtu = getRandomIndex(cardsDataGreen.slice(0,4))
+    brownAzat = getRandomIndex(cardsDataBrown.slice(0,9))
+
+    sec2 = getDecksSecond(blueAzat,brownAzat,greenchtu)
     index = 0;
     getTreck(1)
     second.classList.add('active')
@@ -913,6 +957,11 @@ cthu.addEventListener('click', function(){
 
     
   third.addEventListener('click', function(){
+    blueThirdall = getRandomIndex(blueThird.concat(blueThird1)).slice(0,2)
+    brownThirdall = getRandomIndex(brownThird.concat(brownThird1)).slice(0,9)
+    thirdgreen = getRandomIndex(greenThird.concat(greenThird1)).slice(0,4)
+
+    sec3 = getDecksSecond(blueThirdall, brownThirdall, thirdgreen)
     index = 0;
     getTreck(1)
     third.classList.add('active')
@@ -926,6 +975,11 @@ cthu.addEventListener('click', function(){
 
   
   fourth.addEventListener('click', function(){
+    blueFourth = getRandomIndex(blueFourth0)
+    brownFourth = getRandomIndex (brownFourth1.flat())
+    fourthgreen = getRandomIndex (getArrColor(cardsDataGreen, 'hard', 4))
+
+    sec4 = getDecksSecond(blueFourth, brownFourth, fourthgreen)
     index = 0;
     getTreck(1)
     fourth.classList.add('active')
@@ -947,6 +1001,11 @@ iog.addEventListener('click', function(){
   removeLightBtn()
 
   pre.addEventListener('click', function(){
+    blueRandom = getRandomIndex(blue0)
+    greenRandom = getRandomIndex(green0)
+    brownRandom = getRandomIndex(brown.flat())
+
+    third0 = getDecksThird(blueRandom, brownRandom, greenRandom)
     getTreck(2)
     index = 0;
     pre.classList.add('active')
@@ -959,6 +1018,11 @@ iog.addEventListener('click', function(){
   })
     
   first.addEventListener('click', function(){
+    blueAll = getRandomIndex(blue.concat(blue1)).slice(0,2)
+    greenAll = getRandomIndex(green.concat(green1)).slice(0,5)
+    brownAll = getRandomIndex(brownall)
+
+    third1 = getDecksThird(blueAll, brownAll, greenAll)
     index = 0;
     getTreck(2)
     first.classList.add('active')
@@ -972,6 +1036,11 @@ iog.addEventListener('click', function(){
 
     
   second.addEventListener('click', function(){
+    blueAzat = getRandomIndex(cardsDataBlue.slice(0,2))
+    greenAzat = getRandomIndex(cardsDataGreen.slice(0,5))
+    brownAzat = getRandomIndex(cardsDataBrown.slice(0,9))
+
+    third2 = getDecksThird(blueAzat,brownAzat, greenAzat)
     index = 0;
     getTreck(2)
     second.classList.add('active')
@@ -985,6 +1054,11 @@ iog.addEventListener('click', function(){
 
     
   third.addEventListener('click', function(){
+    blueThirdall = getRandomIndex(blueThird.concat(blueThird1)).slice(0,2)
+    brownThirdall = getRandomIndex(brownThird.concat(brownThird1)).slice(0,9)
+    greenThirdall = getRandomIndex(greenThird.concat(greenThird1)).slice(0,5)
+
+    third3 = getDecksThird(blueThirdall, brownThirdall, greenThirdall)
     index = 0;
     getTreck(2)
     third.classList.add('active')
@@ -998,6 +1072,11 @@ iog.addEventListener('click', function(){
 
   
   fourth.addEventListener('click', function(){
+    blueFourth = getRandomIndex(blueFourth0)
+    brownFourth = getRandomIndex (brownFourth1.flat())
+    greenFourth = getRandomIndex(greenFourth0)
+
+    third4 = getDecksThird(blueFourth, brownFourth, greenFourth)
     index = 0;
     getTreck(2)
     fourth.classList.add('active')
@@ -1019,6 +1098,11 @@ shub.addEventListener('click', function(){
   removeLightBtn()
 
   pre.addEventListener('click', function(){
+    blueRandom = getRandomIndex(blue0)
+    shubBrown0 = getRandomIndex(shubBrown00.flat())
+    shubGreen0 = getRandomIndex(shubGreen00.flat())
+
+    fourth0 = getDecksFourth(blueRandom, shubBrown0, shubGreen0)
     getTreck(3)
     index = 0;
     pre.classList.add('active')
@@ -1031,6 +1115,11 @@ shub.addEventListener('click', function(){
   })
     
   first.addEventListener('click', function(){
+    blueAll = getRandomIndex(blue.concat(blue1)).slice(0,2)
+    shubgreen1 = getRandomIndex(green.concat(green1)).slice(0,6)
+    shubbrown1 = getRandomIndex(brown1.concat(brown2).slice(0,8))
+
+    fourth1 = getDecksFourth(blueAll, shubbrown1, shubgreen1)
     index = 0;
     getTreck(3)
     first.classList.add('active')
@@ -1044,6 +1133,11 @@ shub.addEventListener('click', function(){
 
     
   second.addEventListener('click', function(){
+    blueAzat = getRandomIndex(cardsDataBlue.slice(0,2))
+    shubBrown2 = getRandomIndex(cardsDataBrown.slice(0,8))
+    shubGreen2 = getRandomIndex(cardsDataGreen.slice(0,6))
+
+    fourth2 = getDecksFourth(blueAzat, shubBrown2, shubGreen2)
     index = 0;
     getTreck(3)
     second.classList.add('active')
@@ -1057,6 +1151,11 @@ shub.addEventListener('click', function(){
 
     
   third.addEventListener('click', function(){
+    blueThirdall = getRandomIndex(blueThird.concat(blueThird1)).slice(0,2)
+    shubGreen3 = getRandomIndex(greenThird.concat(greenThird1)).slice(0,6)
+    shubBrown3 = getRandomIndex(brownThird.concat(brownThird1)).slice(0,8)
+
+    fourth3 = getDecksFourth(blueThirdall, shubBrown3, shubGreen3)
     index = 0;
     getTreck(3)
     third.classList.add('active')
@@ -1070,6 +1169,11 @@ shub.addEventListener('click', function(){
 
   
   fourth.addEventListener('click', function(){
+    blueFourth = getRandomIndex(blueFourth0)
+    shubbrown4 = getRandomIndex(shubbrown40.flat())
+    shubgreen4 = getRandomIndex(shubgreen40).flat()
+    
+    fourth4 = getDecksFourth(blueFourth, shubbrown4, shubgreen4)
     index = 0;
     getTreck(3)
     fourth.classList.add('active')
